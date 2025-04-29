@@ -30,7 +30,7 @@
                 <?php if (!empty($sexos) && is_array($sexos)): ?>
                     <?php foreach ($sexos as $sexo): ?>
                         <tr>
-                            <td><?= htmlspecialchars($sexo['id']) ?></td>
+                            <td><?= htmlspecialchars($sexo['idsexo']) ?></td>
                             <td><?= htmlspecialchars($sexo['nombre']) ?></td>
                             <td class="action-buttons">
                                 <a href="/apple6a/public/sexo/edit?id=<?= htmlspecialchars($sexo['id']) ?>" class="btn btn-edit">
