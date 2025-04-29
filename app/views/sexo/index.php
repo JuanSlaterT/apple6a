@@ -33,10 +33,10 @@
                             <td><?= htmlspecialchars($sexo['idsexo']) ?></td>
                             <td><?= htmlspecialchars($sexo['nombre']) ?></td>
                             <td class="action-buttons">
-                                <a href="/apple6a/public/sexo/edit?id=<?= htmlspecialchars($sexo['id']) ?>" class="btn btn-edit">
+                                <a href="/apple6a/public/sexo/edit?id=<?= htmlspecialchars($sexo['idsexo']) ?>" class="btn btn-edit">
                                     <i class="fas fa-edit"></i> Editar
                                 </a>
-                                <a href="/apple6a/public/sexo/eliminar?id=<?= htmlspecialchars($sexo['id']) ?>"
+                                <a href="/apple6a/public/sexo/eliminar?id=<?= htmlspecialchars($sexo['idsexo']) ?>"
                                    class="btn btn-delete"
                                    onclick="return confirm('¿Estás seguro de eliminar este registro?');">
                                     <i class="fas fa-trash-alt"></i> Eliminar
