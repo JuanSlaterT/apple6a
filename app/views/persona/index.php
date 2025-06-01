@@ -32,8 +32,13 @@
                         <td><?php echo htmlspecialchars($persona['nombres']); ?></td>
                         <td><?php echo htmlspecialchars($persona['apellidos']); ?></td>
                         <td><?php echo htmlspecialchars($persona['fechanacimiento']); ?></td>
-                        <td><?php echo htmlspecialchars($persona['elsexo']); ?></td> <td><?php echo htmlspecialchars($persona['elestadocivil']); ?></td> <td>
-                            <a href="/apple6a/public/persona/editForm?id=<?php echo htmlspecialchars($persona['idpersona']); ?>">
+                        <td><?php echo htmlspecialchars($persona['sexo_nombre']); ?></td> 
+                        <td><?php echo htmlspecialchars($persona['estadocivil_nombre']); ?></td> 
+                        <td>
+                            <a href="/apple6a/public/persona/view?idpersona=<?php echo htmlspecialchars($persona['idpersona']); ?>">
+                                <button>View</button>
+                            </a>
+                            <a href="/apple6a/public/persona/edit?idpersona=<?php echo htmlspecialchars($persona['idpersona']); ?>">
                                 <button>Editar</button>
                             </a>
                             <a href="/apple6a/public/persona/deleteForm?id=<?php echo htmlspecialchars($persona['idpersona']); ?>"
